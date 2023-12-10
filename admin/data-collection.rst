@@ -2,20 +2,19 @@
 
 
 ###############
-Data collection
+Наборы данных (Data collection)
 ###############
 
 .. _how_data_collection:
 
-How data collection works
+Как работатют наборы данных
 =========================
 
-Every node can have many data collection items configured (see
-:ref:`basic-concepts-dci` for detailed description). |product_name| server has a
-set of threads dedicated to data collection, called `Data Collectors`, used to
-gather information from the nodes according to :term:`DCI` configuration. You
-can control how many data collectors will run simultaneously, by changing server
-configuration parameter ``NumberOfDataCollectors``.
+Кажадая нода (узел) в системе может иметь множество настроенных параметров в наборе данных  (смотри
+:ref:`basic-concepts-dci` для подробного описания). |product_name| сервер запускает несколько выделенных
+потоков обработки, предназначенных для опроса настроенных параметрв ( :term:`DCI`) в наборах данных и называемых
+`Сборщики данных`(`Data Collectors`). Вы может контролировать количество одновременно запускаемых процессов
+изменяя параметр конфигурации скрвера ``NumberOfDataCollectors``.
 
 All configured DCIs are checked for polling requirement every second
 Main information about node(:guilabel:`Object Details`) can be supplemented with
